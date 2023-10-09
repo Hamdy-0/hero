@@ -25,16 +25,24 @@
         margin: 0 auto;
       }
       header {
-        background-color: rgb(5, 51, 255);
         height: 100vh;
         position: relative;
+        background-image: linear-gradient(
+            rgba(49, 49, 49, 0.6),
+            rgba(49, 49, 49, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
       nav {
         font-size: 20px;
         font-weight: 700;
         display: flex;
         justify-content: space-between;
-        background-color: forestgreen;
+        padding-top: 32px;
+        /* background-image: linear-gradient(to right, red, blue); */
+        /* background-color: forestgreen; */
       }
       .header-container {
         width: 1200px;
@@ -42,12 +50,17 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        background-color: violet;
+        /* background-color: violet; */
         /* text-align: center; */
+      }
+      .header-container-inner {
+        width: 50%;
+        /* background-color: #5252c0; */
       }
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
       p {
         font-size: 20px;
